@@ -92,7 +92,7 @@ const (
 )
 
 var sqlStmts = []string{
-	"SELECT id, tick from StoreLock FOR UPDATE",                                                                                                                                      // sqlDBLockSelect
+	"SELECT id, tick from StoreLock",                                                                                                                                                 // sqlDBLockSelect
 	"INSERT INTO StoreLock (id, tick) VALUES (?, ?)",                                                                                                                                 // sqlDBLockInsert
 	"UPDATE StoreLock SET id=?, tick=?",                                                                                                                                              // sqlDBLockUpdate
 	"SELECT COUNT(uniquerow) FROM ServerInfo",                                                                                                                                        // sqlHasServerInfoRow
